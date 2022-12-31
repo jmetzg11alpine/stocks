@@ -1,0 +1,52 @@
+#stocks-performance-container {
+  width: 100%;
+  height: 90vh;
+}
+
+#stocks-performance-header {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#stocks-performance-container hr {
+  margin: 0;
+}
+#stocks-performance-header h1 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+#stocks-performance-chart {
+  height: 50%;
+  width: 100%;
+}
+
+#stocks-performance-chart svg {
+  width: 100%;
+  height: 100%;
+}
+
+#stocks-performance-symbols {
+  height: 10%;
+  width: 100%;
+}
+
+#stocks-performance-symbols div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 18px;
+}
+
+#stocks-performance-symbols div #selected {
+  display: flex;
+  justify-content: left;
+}
+
+#stocks-performance-symbols div #not-selected {
+  display: flex;
+  justify-content: center;
+}

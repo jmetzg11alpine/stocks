@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+}
+
+#stocks-headers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+}
+#stocks-headers p {
+  font-size: 22px;
+}
+
+.stocks-containers {
+  display: flex;
+  height: 70vh;
+  width: 100%;
+}
+
+.stocks-container-one {
+  width: 36%;
+}
+
+.stocks-container-two {
+  width: 28%;
+}
+
+.stocks-container-three {
+  width: 35%;
+}
+
+hr {
+  margin: 0;
+}

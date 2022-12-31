@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Performance from './components/performance/Performance'
+import Sectors from './components/sectors/Sectors'
+import Countries from './components/countries/Countries'
+import './styles.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id='stocks-container-all'>
+      <div id='stocks-headers'>
+        <p>All this data has come from my personal investment account with Interactive Brokers from the past year. Don't judge too harshly, everyone was a loser in 2022.</p>
+      </div>
+      <div className='stocks-containers'>
+        <div className='stocks-container-one'>
+          <Performance />
+        </div>
+        <div className='stocks-container-two'>
+          <Sectors />
+        </div>
+        <div className='stocks-container-three'>
+          <Countries />
+        </div>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
